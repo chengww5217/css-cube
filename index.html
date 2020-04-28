@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 实现 3D 旋转立方体</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/cube.css" type="text/css">
+</head>
+<body>
+<div class="content">
+  <p class="title">CSS 实现 3D 旋转立方体</p>
+  <p class="hint">
+    本页面是个人博客中文章的实现，原文参见：
+    <a href="https://chengww.com/archives/css-cube.html" target="_blank">
+      https://chengww.com/archives/css-cube.html</a>
+  </p>
+  <p class="title">最终成果</p>
+  <div class="cube cube-wrapper" id="cube-rotate">
+    <div class="box-left">
+      <img src="https://img-cdn.pek3b.qingstor.com/cube/1.png">
+    </div>
+    <div class="box-right">
+      <img src="https://img-cdn.pek3b.qingstor.com/cube/2.png">
+    </div>
+    <div class="box-top">
+      <img src="https://img-cdn.pek3b.qingstor.com/cube/3.png">
+    </div>
+    <div class="box-bottom">
+      <img src="https://img-cdn.pek3b.qingstor.com/cube/4.png">
+    </div>
+    <div class="box-end">
+      <img src="https://img-cdn.pek3b.qingstor.com/cube/6.png">
+    </div>
+    <div class="box-front">
+      <img src="https://img-cdn.pek3b.qingstor.com/cube/5.png">
+    </div>
+  </div>
+
+  <div class="steps">
+    <div class="step1">
+      <p class="title steps">Step 1</p>
+      <p class="hint">将立方体的 6 个面放在同一个平面上。此时所有的图片是堆叠在一起的</p>
+
+      <div class="cube-wrapper">
+        <div>
+          <img src="https://img-cdn.pek3b.qingstor.com/cube/1.png">
+        </div>
+        <div>
+          <img src="https://img-cdn.pek3b.qingstor.com/cube/2.png">
+        </div>
+        <div>
+          <img src="https://img-cdn.pek3b.qingstor.com/cube/3.png">
+        </div>
+        <div>
+          <img src="https://img-cdn.pek3b.qingstor.com/cube/4.png">
+        </div>
+        <div>
+          <img src="https://img-cdn.pek3b.qingstor.com/cube/6.png">
+        </div>
+        <div>
+          <img src="https://img-cdn.pek3b.qingstor.com/cube/5.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="step2">
+      <p class="title steps">Step 2</p>
+      <p class="hint">将每个面旋转到其对应的位置，以立方体左侧为例</p>
+
+      <div class="cube-wrapper">
+        <div>
+          <img src="https://img-cdn.pek3b.qingstor.com/cube/1.png" id="transform-left-repeat">
+        </div>
+      </div>
+    </div>
+
+    <div class="step3">
+      <p class="title steps">Step 3</p>
+      <p class="hint">同理将其他几个面也旋转到指定的位置</p>
+
+      <div class="cube-wrapper">
+        <div>
+          <img src="https://img-cdn.pek3b.qingstor.com/cube/2.png" id="transform-right-repeat">
+        </div>
+        <div>
+          <img src="https://img-cdn.pek3b.qingstor.com/cube/3.png" id="transform-top-repeat">
+        </div>
+      </div>
+    </div>
+
+    <div class="step4">
+      <p class="title steps">Step 4</p>
+      <p class="hint">最后将整个立方体添加旋转动画即可</p>
+      <p class="quote">
+        * 本页面中所有图片来自<a href="https://www.yuanshen.com/" target="_blank">原神官网</a>
+      </p>
+    </div>
+
+  </div>
+
+</div>
+<script src="js/cube.js"></script>
+</body>
+</html>
