@@ -8,8 +8,8 @@
 .cube-wrapper {
   position: relative;
   margin: 100px auto;
-  width: 250px;
-  height: 250px;
+  width: var(--cube-width);
+  height: var(--cube-width);
 }
 
 .cube-wrapper img {
@@ -22,7 +22,7 @@
 }
 
 .cube {
-  margin: 220px auto;
+  margin: var(--cube-margin) auto;
 }
 
 :root {
