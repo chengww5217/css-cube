@@ -4,9 +4,9 @@ autoAnimate('cube-rotate',
     'transform-front-repeat', 'transform-end-repeat')
 document.getElementById('cube-rotate').classList.add('cube-rotate')
 
-function autoAnimate(...classIds) {
+function autoAnimate(...elementIds) {
   let targets = []
-  classIds.forEach(id => {
+  elementIds.forEach(id => {
     const target = document.getElementById(id)
     if (target) targets.push(target)
   })
@@ -32,7 +32,7 @@ function isElementInViewport (el) {
   return (
       rect.top >= -100 &&
       rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
